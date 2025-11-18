@@ -1,0 +1,69 @@
+# Weekly Progress Report
+
+**Week:** 10 November 2025 – 17 November 2025
+
+## Daily Activities
+
+### Monday, 10 November 2025
+- Explored CKB Rust script development fundamentals and script template structures
+- Investigated Molecule 0.8.0 updates, focusing on Vec-to-bytes transition and RISC-V atomic instruction implications
+- Analyzed atomic behavior handling approaches in Molecule-based projects, including ckb-std feature configurations
+
+### Tuesday, 11 November 2025
+- Configured project development environment with required dependencies:
+  - Unix-based tooling setup
+  - Rust with riscv64 target installation
+  - Clang 18+ environment configuration
+  - cargo-generate tool installation
+- Practiced workspace template generation using cargo generate command
+
+### Wednesday, 12 November 2025
+- Generated initial workspace project and analyzed directory architecture:
+  - Cargo.toml workspace configuration
+  - Makefile recipe structure
+  - Scripts directory organization
+  - Tests framework setup
+- Documented Makefile functionality for contract compilation and execution workflows
+
+### Thursday, 13 November 2025
+- Created initial contract crate using workspace generation commands
+- Experimented with contract customization options:
+  - Multiple contract generation within single workspace
+  - Template selection (atomics-contract, stack-reorder-contract)
+  - Destination path configuration for crate organization
+- Reviewed available template types and their specific use cases
+
+### Friday, 14 November 2025
+- Implemented contract building and testing workflows:
+  - Debug and release mode compilation
+  - Selective contract building techniques
+  - Test execution and validation procedures
+- Studied reproducible build practices through containerized development environments
+
+### Saturday, 15 November 2025
+- Developed standalone contract crates using dedicated template:
+  - Initialized standalone project structure
+  - Configured build and test pipelines
+  - Applied code quality checks (clippy, formatting)
+- Compared standalone vs workspace development approaches
+
+### Sunday, 16 November 2025
+- Generated native simulators for contract debugging and validation
+- Practiced simulator creation with proper CRATE parameter usage
+- Reviewed naming conventions and structural requirements for simulator integration
+
+### Monday, 17 November 2025
+- Evaluated workspace-based versus standalone contract development methodologies
+- Documented flexibility trade-offs, build workflow differences, and template structures
+- Prepared development environment for upcoming contract implementation phase
+
+## Challenges & Notes
+- Molecule atomic feature configuration required precise Rust compiler flag management
+- Workspace architecture comprehension was essential for efficient development setup
+- Standalone contracts offer greater freedom but require more manual configuration than workspace templates
+
+## Goals for Next Week
+- Implement and test basic smart contracts using established templates
+- Apply reproducible build practices to ensure consistent binary outputs
+- Experiment with native simulator for contract logic validation pre-deployment
+- Begin integrating learned concepts into practical contract development
